@@ -1,0 +1,132 @@
+.component-container {
+    width: 100%;
+    padding: 0.5rem 0;
+    transition: var(--theme-transition-properties-1);
+}
+
+.search-component-wrapper {
+    margin: auto;
+    padding: 1rem 2rem;
+    width: 60%;
+    background: var(--tiles-color);
+    border-radius: 0.35rem;
+}
+
+.search-nav-btns-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+
+.search-nav-btns .search-nav-btn {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.search-nav-btns .search-nav-btn.active {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    border: 1px solid var(--font-color);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.2rem;
+}
+
+.input-wrapper button,
+.input-wrapper input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.25rem;
+}
+
+.input-wrapper input {
+    width: 80%;
+
+    &::placeholder {
+        color: var(--font-color);
+    }
+}
+
+.input-wrapper input:valid:not(:placeholder-shown) {
+    color: green;
+}
+
+.input-wrapper input:invalid:not(:placeholder-shown) {
+    color: crimson;
+}
+
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.input-wrapper input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.input-wrapper button {
+    width: 20%;
+    padding: 0.25rem 0.5rem;
+    border-left: 1px solid var(--font-color);
+    color: var(--font-color);
+    transition: var(--theme-transition-properties-2);
+
+    &:hover {
+        cursor: pointer;
+        background: var(--btn-hover);
+        color: var(--font-color);
+    }
+}
+
+@media screen and (width <=800px) {
+    .component-container {
+        padding: 1rem;
+    }
+
+    .search-component-wrapper {
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (width <=430px) {
+    .component-container {
+        padding: 1rem;
+    }
+
+    .search-component-wrapper {
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 70%;
+    }
+
+    .input-wrapper button,
+    .input-wrapper input {
+        padding: 0.25rem;
+    }
+
+    .input-wrapper input {
+        width: 75%;
+    }
+
+    .input-wrapper button {
+        width: 25%;
+        padding: 0.25rem 0.5rem;
+    }
+
+}

@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bg-color: #f5f4f0;
+  --font-color: #21242b;
+  --tiles-color: #ffffff;
+  --btn-hover: #edebe4;
+  --selection-bg-color: #090806;
+  --card-color: #f8f7f4;
+  --selection-font-color: #fdfdfc;
+  --light-card-shadow: #aaabb0;
+  --box-shadow-1: -0.15rem 0.35rem 0.35rem lightgrey;
+  --theme-transition-properties-1: 0.4s ease-in-out;
+  --theme-transition-properties-2: 0.3s ease-in-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+  --bg-color: #16181d;
+  --font-color: #f5f4f0;
+  --tiles-color: #2b2d39;
+  --btn-hover: #6e788f;
+  --card-color: #40424d;
+  --light-card-shadow: #d5d5d7;
+  --selection-bg-color: #f3f3f3;
+  --selection-font-color: #07080a;
+}
+
+body {
+  background: var(--bg-color);
+  transition: var(--theme-transition-properties-1);
+  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Poppins", sans-serif;
+
+  ::selection {
+    background: var(--selection-bg-color);
+    color: var(--selection-font-color);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

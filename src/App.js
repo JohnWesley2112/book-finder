@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
+import BookTile from './components/book-info-page/BookTile';
+import SearchSection from './components/search-component/SearchSection';
+import { BookDataProvider } from './api/BookDataProvider';
+import { Toaster } from 'react-hot-toast';
+import { Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookDataProvider>
+      <div className="container">
+        <Header />
+        <SearchSection />
+        <Routes>
+          <Route path='/books' element={<BookTile />} />
+        </Routes>
+      </div>
+      <Toaster
+        position="top-center"
+        reverseOrder={false} />
+    </BookDataProvider>
   );
 }
 
