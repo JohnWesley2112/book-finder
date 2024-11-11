@@ -4,6 +4,7 @@ import './Book.css'
 
 function Book(book) {
 
+    // Individual book-wrapper
     return (
         <div className='book-wrapper'>
             <div className='cover-img'>

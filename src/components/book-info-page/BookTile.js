@@ -27,6 +27,7 @@ const BookTile = () => {
                 <div className='result-banner'>
                     <h2>{resultTitle}</h2>
                 </div>
+                {/* Here a grid of book from the fetched data is displayed */}
                 <div className='booklist-grid'>
                     {
                         booksWithCovers.slice(0, 30).map((item, index) => {
