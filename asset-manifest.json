@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/book-finder/static/css/main.2e134966.css",
-    "main.js": "/book-finder/static/js/main.ce801527.js",
+    "main.js": "/book-finder/static/js/main.92e5a181.js",
     "static/media/cover_not_found.jpg": "/book-finder/static/media/cover_not_found.69846940c7af3e651508.jpg",
     "static/media/logo.png": "/book-finder/static/media/logo.14d136e899c010767e62.png",
     "static/media/day.png": "/book-finder/static/media/day.ba37cd2430d8bf642d0a.png",
@@ -9,10 +9,10 @@
     "static/media/loader.svg": "/book-finder/static/media/loader.eb116b1ecb5dcaf2d8c0f3a28b5ef0ef.svg",
     "index.html": "/book-finder/index.html",
     "main.2e134966.css.map": "/book-finder/static/css/main.2e134966.css.map",
-    "main.ce801527.js.map": "/book-finder/static/js/main.ce801527.js.map"
+    "main.92e5a181.js.map": "/book-finder/static/js/main.92e5a181.js.map"
   },
   "entrypoints": [
     "static/css/main.2e134966.css",
-    "static/js/main.ce801527.js"
+    "static/js/main.92e5a181.js"
   ]
 }
